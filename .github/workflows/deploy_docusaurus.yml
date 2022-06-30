@@ -28,8 +28,6 @@ jobs:
           npm ci --audit false
           npm run build
 
-          mv ./build/index.html ./build/fp1yl74laxjqR24iwkaz.html
-          
       - name: Deploy to GitHub Pages
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
